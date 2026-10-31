@@ -50,7 +50,7 @@ curl.exe -X POST http://localhost:8080/api/v1/tenants/acme/employee-events `
   --data-binary "@requests/sample-batch.json"
 ```
 
-## How it works (one paragraph)
+## How it works 
 
 Every HR event carries the source system's version and a full snapshot of the HR-owned fields.
 Per employee, the highest version wins: equal is a duplicate, lower is stale. Each record is
